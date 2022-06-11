@@ -1,6 +1,6 @@
-# Botway Discord Python Bot Template
+# Botway Slack Python Bot Template
 
-> This is a template for a Discord Python bot.
+> This is a template for a Slack Python bot.
 
 ## Tools
 
