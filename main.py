@@ -1,11 +1,11 @@
 import logging
 from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
-from botway import GetToken, GetAppId, GetSigningSecret
+from botway import GetToken, GetAppId, GetSecret
 
 logging.basicConfig(level=logging.DEBUG)
 
-app = App(token=GetToken(), signing_secret=GetSigningSecret())
+app = App(token=GetToken(), signing_secret=GetSecret())
 
 @app.middleware
 def log_request(logger, body, next):
